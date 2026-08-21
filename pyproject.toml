@@ -20,7 +20,7 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://mahimai.ca/tools/latency-calculator"
-Repository = "https://github.com/mahimairaja/voice-latency"
+Repository = "https://github.com/mahimailabs/voice-latency"
 
 [project.scripts]
 voice-latency = "voice_latency.cli:main"
