@@ -4,18 +4,19 @@ A per-hop latency budget for voice agents. It models two architectures, cascaded
 (STT then LLM then TTS) and realtime (one speech-to-speech model), adds framework
 overhead, and tells you where the milliseconds go.
 
-**The numbers are the point.** Every provider figure lives in one Python file
-with a `source` and a `date`. If you have measured better, open a PR. That is how
-a latency benchmark stays honest.
+**The numbers are the point.** Every figure lives in one Python file with a
+`source` and a `date`, ours included. The seed values are Mahimai estimates; if
+you have a stronger source (measured, ideally with a screenshot), open a PR and
+cite it. That is how a latency benchmark stays honest.
 
-> **Disclaimer.** These figures are illustrative estimates aggregated from public
-> and community sources. They are not measurements of your system, and not
-> vendor-published unless a `source` says so. They are approximate, they will
-> drift as providers change, and they may simply be wrong. Use them to understand
-> where a latency budget goes, not as a basis for SLAs, contracts, or purchasing
-> decisions. The software and data are provided "as is", without warranty of any
-> kind, and the maintainers accept no liability for any decision made using them.
-> Verify against your own stack before you rely on a number.
+> ⚠️ **Disclaimer.** These figures are **Mahimai estimates**, aggregated from
+> public and community sources. They are **not** measurements of your system, and
+> **not** vendor-published unless a `source` says so. They are approximate, they
+> will drift as providers change, and they may simply be wrong. Use them to
+> understand where a latency budget goes, **not** as a basis for SLAs, contracts,
+> or purchasing decisions. **The software and data are provided "as is", without
+> warranty of any kind, and the maintainers accept no liability for any decision
+> made using them.** Verify against your own stack before you rely on a number.
 
 This package powers the calculator at
 [mahimai.ca/tools/latency-calculator](https://mahimai.ca/tools/latency-calculator);

@@ -1,9 +1,11 @@
 """The latency numbers. This file is the point of the project.
 
-Every entry carries a ``source`` and ``date`` so a change is a number with a
-receipt, not a guess. Figures are illustrative defaults unless a source says
-otherwise: they are not vendor-published or independently benchmarked. If you
-have measured better numbers, open a PR (see CONTRIBUTING.md).
+Every entry carries a ``source`` and ``date`` so a number is never a bare guess.
+The seed values here are Mahimai estimates as of the date shown: aggregated from
+public and community sources, not measured on your system and not vendor-published
+unless a ``source`` says so. They are approximate and will drift as providers
+change. If you have a stronger source (measured, ideally with a screenshot), open
+a PR and cite it (see CONTRIBUTING.md).
 
 All values are milliseconds, as (p50, p95) pairs.
 """
@@ -19,7 +21,7 @@ class Entry:
 
     p50: float
     p95: float
-    source: str = "illustrative default"
+    source: str = "Mahimai estimate"
     date: str = "2026-08"
     notes: str = ""
 
@@ -32,7 +34,7 @@ class Transport:
     net_in: tuple[float, float]
     jitter: tuple[float, float]
     net_out: tuple[float, float]
-    source: str = "illustrative default"
+    source: str = "Mahimai estimate"
     date: str = "2026-08"
     notes: str = ""
 
@@ -78,21 +80,21 @@ TTS: dict[str, Entry] = {
 # One model replaces STT + LLM + TTS. Numbers are the model's own response
 # time, excluding transport and endpointing (those are separate hops).
 REALTIME: dict[str, Entry] = {
-    "OpenAI GPT Realtime": Entry(340, 700, source="community estimate", notes="gpt-4o-realtime"),
-    "OpenAI GPT Realtime mini": Entry(280, 560, source="community estimate", notes="gpt-4o-mini-realtime"),
-    "Gemini Live (Flash)": Entry(320, 660, source="community estimate", notes="gemini-2.0-flash-live"),
-    "Gemini Live (native audio)": Entry(360, 720, source="community estimate"),
-    "Amazon Nova Sonic": Entry(300, 620, source="community estimate"),
-    "Self-hosted (Moshi)": Entry(220, 500, source="community estimate", notes="full-duplex, low latency"),
+    "OpenAI GPT Realtime": Entry(340, 700, source="Mahimai estimate", notes="gpt-4o-realtime"),
+    "OpenAI GPT Realtime mini": Entry(280, 560, source="Mahimai estimate", notes="gpt-4o-mini-realtime"),
+    "Gemini Live (Flash)": Entry(320, 660, source="Mahimai estimate", notes="gemini-2.0-flash-live"),
+    "Gemini Live (native audio)": Entry(360, 720, source="Mahimai estimate"),
+    "Amazon Nova Sonic": Entry(300, 620, source="Mahimai estimate"),
+    "Self-hosted (Moshi)": Entry(220, 500, source="Mahimai estimate", notes="full-duplex, low latency"),
 }
 
 # ── Orchestration frameworks: added overhead (VAD, buffering, turn mgmt) ──────
 FRAMEWORKS: dict[str, Entry] = {
     "None (raw)": Entry(0, 0, source="baseline"),
-    "LiveKit Agents": Entry(15, 45, source="community estimate"),
-    "Pipecat": Entry(20, 55, source="community estimate"),
-    "Google ADK (bidi streaming)": Entry(25, 70, source="community estimate"),
-    "VoiceGateway": Entry(12, 35, source="community estimate", notes="mahimai open-source gateway"),
+    "LiveKit Agents": Entry(15, 45, source="Mahimai estimate"),
+    "Pipecat": Entry(20, 55, source="Mahimai estimate"),
+    "Google ADK (bidi streaming)": Entry(25, 70, source="Mahimai estimate"),
+    "VoiceGateway": Entry(12, 35, source="Mahimai estimate", notes="mahimai open-source gateway"),
 }
 
 # ── Model constants: the methodology, not provider data ──────────────────────

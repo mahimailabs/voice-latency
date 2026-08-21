@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "transport": {
     "PSTN / SIP": {
       "net_in": [
@@ -14,7 +14,7 @@
         55,
         95
       ],
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": "carrier trunk + jitter buffer"
     },
@@ -31,7 +31,7 @@
         22,
         45
       ],
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
@@ -48,7 +48,7 @@
         12,
         28
       ],
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": "same-continent WebRTC, no PSTN leg"
     }
@@ -57,42 +57,42 @@
     "Deepgram Nova-3": {
       "p50": 90,
       "p95": 150,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "AssemblyAI Universal": {
       "p50": 130,
       "p95": 210,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "OpenAI gpt-4o-transcribe": {
       "p50": 180,
       "p95": 300,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Azure Speech": {
       "p50": 160,
       "p95": 260,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Google STT v2": {
       "p50": 170,
       "p95": 280,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Self-hosted (Whisper)": {
       "p50": 220,
       "p95": 420,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": "whisper.cpp / faster-whisper, one GPU"
     }
@@ -101,42 +101,42 @@
     "GPT-4o mini": {
       "p50": 280,
       "p95": 480,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "GPT-4o": {
       "p50": 380,
       "p95": 620,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Claude Haiku": {
       "p50": 260,
       "p95": 430,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Claude Sonnet": {
       "p50": 420,
       "p95": 700,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Gemini Flash": {
       "p50": 240,
       "p95": 400,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Self-hosted (Llama)": {
       "p50": 320,
       "p95": 900,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": "vLLM, depends heavily on batch + hardware"
     }
@@ -145,42 +145,42 @@
     "Cartesia Sonic": {
       "p50": 90,
       "p95": 150,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "ElevenLabs Flash": {
       "p50": 120,
       "p95": 200,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "ElevenLabs Turbo": {
       "p50": 180,
       "p95": 300,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Deepgram Aura": {
       "p50": 110,
       "p95": 180,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Azure Neural": {
       "p50": 200,
       "p95": 330,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Self-hosted (XTTS)": {
       "p50": 260,
       "p95": 520,
-      "source": "illustrative default",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     }
@@ -189,42 +189,42 @@
     "OpenAI GPT Realtime": {
       "p50": 340,
       "p95": 700,
-      "source": "community estimate",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": "gpt-4o-realtime"
     },
     "OpenAI GPT Realtime mini": {
       "p50": 280,
       "p95": 560,
-      "source": "community estimate",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": "gpt-4o-mini-realtime"
     },
     "Gemini Live (Flash)": {
       "p50": 320,
       "p95": 660,
-      "source": "community estimate",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": "gemini-2.0-flash-live"
     },
     "Gemini Live (native audio)": {
       "p50": 360,
       "p95": 720,
-      "source": "community estimate",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Amazon Nova Sonic": {
       "p50": 300,
       "p95": 620,
-      "source": "community estimate",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Self-hosted (Moshi)": {
       "p50": 220,
       "p95": 500,
-      "source": "community estimate",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": "full-duplex, low latency"
     }
@@ -240,28 +240,28 @@
     "LiveKit Agents": {
       "p50": 15,
       "p95": 45,
-      "source": "community estimate",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Pipecat": {
       "p50": 20,
       "p95": 55,
-      "source": "community estimate",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "Google ADK (bidi streaming)": {
       "p50": 25,
       "p95": 70,
-      "source": "community estimate",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": ""
     },
     "VoiceGateway": {
       "p50": 12,
       "p95": 35,
-      "source": "community estimate",
+      "source": "Mahimai estimate",
       "date": "2026-08",
       "notes": "mahimai open-source gateway"
     }

@@ -20,7 +20,7 @@ latency numbers. The best contribution is a **number with a source**.
 
 ## What makes a good PR
 
-- A `source` a reader can weigh. If you measured it, say how.
+- A `source` a reader can weigh. If you measured it, say how, and attach a screenshot of the measurement where you can.
 - One provider (or one coherent set) per PR, so it is easy to review.
 - Tests pass. If you added a new provider, the export test still holds.
 
