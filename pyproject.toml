@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "voice-latency"
+version = "0.1.0"
+description = "A per-hop latency budget for voice agents: cascaded (STT+LLM+TTS) and realtime (speech-to-speech), plus framework overhead. The numbers are the point, PR better ones."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Mahimai Raja J" }]
+keywords = ["voice", "latency", "tts", "stt", "llm", "speech-to-speech", "realtime", "livekit", "voice-agents"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  "Intended Audience :: Developers",
+]
+
+[project.urls]
+Homepage = "https://mahimai.ca/tools/latency-calculator"
+Repository = "https://github.com/mahimairaja/voice-latency"
+
+[project.scripts]
+voice-latency = "voice_latency.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/voice_latency"]
